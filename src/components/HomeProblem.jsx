@@ -37,7 +37,7 @@ const Problems = ({ limit }) => {
 
         try {
             const response = await axios.get(
-                "/api/allproblems",
+                `${baseURL}/api/allproblems`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
